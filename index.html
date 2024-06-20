@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#5B86E5",
+							secondary: "#36D0DC",
+						},
+					},
+				},
+			};
+		</script>
+	</head>
+	<body
+		class="w-[100vw] h-[100vh] bg-gradient-to-r from-primary to-secondary p-4 flex justify-center items-center">
+		<div
+			class="p-10 bg-white/50 backdrop-blur-sm rounded-sm shadow-lg text-white">
+			<img
+				src="image.png"
+				alt="Logo"
+				class="w-96 mb-8" />
+			<h4 class="text-2xl font-bold mb-6">
+				PENGUMUMAN HASIL SELEKSI SNBT SNPMB 2024
+			</h4>
+			<p class="mb-4">
+				Masukkan nomor peserta UTBK-SNBT dan tanggal lahir Anda.
+			</p>
+			<form action="">
+				<div>
+					<label
+						for="nomor_peserta"
+						class="block mb-2"
+						>Nomor peserta UTBK-SNBT</label
+					>
+					<input
+						type="text"
+						id="nomor_peserta"
+						class="w-full block outline-none rounded transition focus:ring-4 focus:ring-blue-500/50 mb-1 text-gray-800 px-4 py-2" />
+					<p class="text-sm">
+						Masukkan 12-digit nomor peserta UTBK-SNBT Anda.
+					</p>
+				</div>
+				<div>
+					<label
+						for="tanggal_lahir"
+						class="block mb-2 mt-4"
+						>Tanggal lahir</label
+					>
+					<div class="flex mb-3">
+						<div class="w-full">
+							<input
+								type="text"
+								class="w-full block outline-none rounded transition focus:ring-4 focus:ring-blue-500/50 mb-1 text-gray-800 px-4 py-2"
+								placeholder="dd" />
+							<p class="text-sm">Tanggal (2 digit): 01-31</p>
+						</div>
+						<div class="w-full mx-4">
+							<input
+								type="text"
+								class="w-full block outline-none rounded transition focus:ring-4 focus:ring-blue-500/50 mb-1 text-gray-800 px-4 py-2"
+								placeholder="mm" />
+							<p class="text-sm">Bulan (2 digit): 01-12</p>
+						</div>
+						<div class="w-full">
+							<input
+								type="text"
+								class="w-full block outline-none rounded transition focus:ring-4 focus:ring-blue-500/50 mb-1 text-gray-800 px-4 py-2"
+								placeholder="yyyy" />
+							<p class="text-sm">Tahun (4 digit)</p>
+						</div>
+					</div>
+				</div>
+				<div class="mb-3 flex items-start">
+					<input
+						type="checkbox"
+						class="mt-1.5 mr-2" />
+					<label for=""
+						>Dengan ini saya menyatakan bahwa apabila di kemudian
+						hari ditemukan kecurangan yang saya lakukan dalam
+						UTBK-SNBT 2024, maka status penerimaan saya
+						dibatalkan.</label
+					>
+				</div>
+				<button
+					class="px-4 py-2 bg-primary rounded hover:opacity-80 transition">
+					Lihat Hasil
+				</button>
+			</form>
+		</div>
+	</body>
+</html>
